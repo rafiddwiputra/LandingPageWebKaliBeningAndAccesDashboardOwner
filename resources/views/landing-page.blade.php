@@ -13,7 +13,7 @@
 
     <!-- Header Untuk Navigation -->
     <div class="bg-white mt-0 relative" x-data="{ open: false }">
-        <div class="max-w-7l mx-auto px-4">
+        <div class="max-w-7xl mx-auto px-4">
             <div class="flex items-center justify-between py-3 md:py-5">
 
                 <!-- Logo -->
@@ -31,7 +31,7 @@
                 </div>
 
                 <!-- Navigation Menu (Desktop) -->
-                <nav class="hidden md:flex gap-8">
+                <nav class="hidden md:flex gap-8 text-xl">
                     <a href="#" class="nav-link">Beranda</a>
                     <a href="#" class="nav-link">Fasilitas</a>
                     <a href="#" class="nav-link">Menu</a>
@@ -109,7 +109,7 @@
      class="absolute inset-0 w-full h-full object-cover">
 
      <!-- Overlay -->
-      <div class="absolute inset-0 bg-black/35"></div>
+      <div class="absolute inset-0 bg-black/25"></div>
 
       <!-- Teks di atas gambar -->
        <div class="relative z-10 h-full flex items-center">
@@ -150,6 +150,105 @@
        </div>
        </div>
     </section>
+   
+    <!-- Bagian konten 2 -->
+    <section class="stats-section">
+    <div class="stats-card">
 
+        <div class="stat-item fade-up">
+            <span class="stat-circle">
+                <span class="count" data-target="4">0</span>+
+            </span>
+            <p class="stat-title">KOLAM PANCING</p>
+        </div>
+
+        <div class="stat-item fade-up">
+            <span class="stat-circle">
+                <span class="count" data-target="20">0</span>+
+            </span>
+            <p class="stat-title">ANEKA MAKANAN</p>
+        </div>
+
+        <div class="stat-item fade-up">
+            <span class="stat-circle">
+                <span class="count" data-target="20">0</span>+
+            </span>
+            <p class="stat-title">MENU PENDAMPING</p>
+        </div>
+
+        <div class="stat-item fade-up">
+            <span class="stat-circle">
+                <span class="count" data-target="1">0</span>
+            </span>
+            <p class="stat-title">KIOS PEMANCING</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Konten 3 -->
+<section class="facility-section fade-up">
+    <div class="facility-wrapper">
+
+        <!-- Header -->
+        <div class="facility-header">
+            <h2>Fasilitas Lengkap Untuk<br>Kenikmatan Anda.</h2>
+
+            <!-- Garis -->
+             <div class="facility-desc">
+               <span class="line"></span>
+            <p>
+                Setiap detail kami rancang untuk memberikan
+                standar pelayanan terbaik bagi setiap pengunjung.
+            </p>
+            </div>
+        </div>
+
+        <!-- GRID CARD -->
+        <div class="facility-cards">
+
+            <!-- Card 1 -->
+            <div class="facility-card">
+                <div class="facility-icon">
+                    <img src="{{ asset('images/ikon_areamancing.png') }}" alt="Ikon Kolam">
+                </div>
+                <h3>Area Memancing Nyaman</h3>
+                <p>
+                    Area memancing yang nyaman dengan suasana tenang
+                    dan pemandangan kolam yang bersih.
+                </p>
+                <a href="#" class="btn-secondary">Detail Fasilitas</a>
+            </div>
+
+            <!-- Card 2 (Utama) -->
+            <div class="facility-card primary">
+                <div class="facility-icon">
+                    <img src="{{ asset('images/ikon_dapur.png') }}" alt="Ikon Dapur">
+                </div>
+                <h3>Signature Kitchen</h3>
+                <p>
+                    Menyediakan beragam menu makanan dan minuman
+                    untuk menemani waktu bersantai.
+                </p>
+                <a href="#" class="btn-secondary">Lihat Menu</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="facility-card">
+                <div class="facility-icon">
+                    <img src="{{ asset('images/ikon_kios.png') }}" alt="Ikon Kios">
+                </div>
+                <h3>Kios Pemancingan</h3>
+                <p>
+                    Menyediakan alat pancing, umpan,
+                    dan perlengkapan pendukung lainnya.
+                </p>
+                <a href="#" class="btn-secondary">Lihat Katalog</a>
+            </div>
+
+        </div>
+    </div>
+
+</section>
 </section>
 @endsection

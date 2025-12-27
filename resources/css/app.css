@@ -124,4 +124,224 @@
         }
     }
 
+    /* Section Bagian Konten Kedua */
+    .stats-section{
+        padding: 50px 20px;
+        
+    }
+
+    .stats-card{
+        max-width: 1100px;
+        margin: 0 auto;
+        border-radius: 25px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        padding: 30px 20px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    /* Itemn */
+    .stat-item{
+        flex: 1;
+        text-align: center;
+    }
+
+    /* Bagian Lingkaran Angka */
+    .stat-circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 auto 10px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+    /* Bagian Tulisan di bawah lingkaran */
+    .stat-title{
+        font-size: 12px;
+        font-weight:800;
+        letter-spacing: 1px;
+        color: #222;
+    }
+
+    /* Responsif Device Mobile */
+    @media (max-width: 640px) {
+        .stats-card{
+            flex-direction: column;
+            padding: 24px 16px;
+        }
+        .stat-item{
+            margin-bottom: 16px;
+        }
+    }
+
+    .stat-circle:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(0, 128, 128, 0.4);
+    }
+
+    /* Animasi Masuk dari bawah */
+    .fade-up {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .fade-up.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+/* =============================================================================================*/
+
+/* CSS bagian konten 3 */
+.facility-section {
+    padding: 80px 20px;
+    background: #f9f9f9 ;
+}
+
+.facility-wrapper {
+    max-width: 1800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 80px 60px;
+    border-radius: 90px;
+}
+
+/* Header */
+.facility-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+.facility-header h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #111;
+}
+
+.facility-header p {
+    max-width: 420px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Grid */
+.facility-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Card */
+.facility-card {
+    background: #ffffff;
+    padding: 30px 24px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facility-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* Card Utama */
+.facility-card.primary {
+    background: #008080;
+    color: #ffffff;
+}
+
+.facility-card.primary p {
+    color: #e6ffff;
+}
+
+/* Icon */
+.facility-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 16px;
+    border-radius: 14px;
+    background: rgba(0,128,128,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facility-icon img {
+    width: 28px;
+    height: 28px;
+}
+
+.facility-card.primary .facility-icon {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Text */
+.facility-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.facility-card p {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .facility-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .facility-cards {
+        grid-template-columns: 1fr;
+    }
+    .facility-desc {
+        flex-direction: column;
+    }
+    .facility-desc .line {
+        width: 60px;
+        height: 4px;
+}
+}
+
+/* Garis */
+.facility-desc {
+    display: flex;
+   align-items: stretch;
+    gap: 16px;
+    max-width: 420px;
+}
+
+.facility-desc .line {
+    width: 4px;
+    background: #008080;
+    border-radius: 4px;
+}
+
+
+.facility-desc p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
 }
